@@ -9,5 +9,11 @@ import { items } from "./movies.json";
 
 <template>
   <!-- This is where your template goes	-->
-  <div></div>
+  <div class="flex justify-center w-full py-4">
+    <div class="grid grid-cols-4 gap-8">
+      <div v-for="item in items">
+        <img class="w-72 h-96" :src="item.image">
+      </div>
+    </div>
+  </div>
 </template>
